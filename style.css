@@ -1,0 +1,178 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Font
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700 */
+
+
+/*====================================================
+            Base style
+======================================================*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body {
+    min-width: 300px;
+    height: 100vh;
+    background-image: url(images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif, serif;
+    Font-size: 14px;
+    color: var(--pale-blue);
+}
+
+/*====================================================
+            first section style
+======================================================*/
+.first-section {
+    height: 200px;
+    min-width: 350px;
+    width: 90%;
+    margin: auto;
+    margin-top: 125px;
+    margin-bottom: 18px;
+    padding: 42px 20px 20px 40px;
+    background-color: var(--dark-blue);
+}
+
+.logo {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.small-icon {
+    background-color: var(--very-dark-blue);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.document {
+    padding: 13px 15px;
+}
+
+.folder {
+    padding: 15px 13px;
+}
+
+.upload {
+    padding: 17px 13px;
+}
+
+/*====================================================
+            Second section style
+======================================================*/
+.second-section {
+    position: relative;
+    height: 160px;
+    width: 90%;
+    min-width: 350px;
+    margin: auto;
+    padding: 42px 20px 20px 40px;
+    background-color: var(--dark-blue);
+}
+
+.second-section p:first-child {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.second-section p:first-child span {
+    font-weight: 700;
+}
+
+.second-section p:nth-of-type(2),
+.second-section p:nth-of-type(3){
+    display: inline-block;
+}
+
+.second-section p:nth-of-type(3) {
+   float: right;
+}
+
+
+.color-bar {
+    position: relative;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    color: var(--very-dark-blue);
+    height: 14px;
+}
+
+.light-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 81.5%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    height: 14px;
+}
+
+.light-bar span {
+    position: absolute;
+    right: 0;
+    padding-top: 1px;
+    margin-left: 93%;
+    background-color: white;
+    color: white;
+    display: inline-block;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+}
+
+.memory span {
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--very-dark-blue);
+}
+.memory {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--grayish-blue);
+}
+
+.foot {
+    margin-top: 272px;
+}
